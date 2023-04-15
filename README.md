@@ -41,3 +41,8 @@ DateTime.Now.DayOfWeek.ToPolishWords(Case.Genitive, isPlural: true);
 
 // sobót
 ```
+
+## Others
+See my others libraries:
+- [Polish.NumbersInWords](https://github.com/Lskrzypek/Polish.NumberInWords)
+- [Polish.CurrenciesInWords](https://github.com/Lskrzypek/Polish.CurrenciesInWords)
