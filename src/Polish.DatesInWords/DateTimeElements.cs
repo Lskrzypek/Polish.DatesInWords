@@ -35,18 +35,18 @@ namespace Polish.DatesInWords
             _configuration = configuration;
 
             _yearBuilder = dateTime.Year.ToPolishWords()
-                .Case(configuration.UseYearsInCase ? _case : Case.Genitive)
+                .Case((configuration.UseYearsInCase ? _case : Case.Genitive).ToNumericCase())
                 .Ordinal();
 
             _dayBuilder = dateTime.Day.ToPolishWords()
-                .Case(@case)
+                .Case(@case.ToNumericCase())
                 .Ordinal();
         }
 
         private string GetMonthInWords()
         {
             var @case = _configuration.UseMonthsInCase ? _case : Case.Genitive;
-            return Month.GetMonth(DateTime.Month).GetWord(@case);
+            return Month.GetMonth(DateTime.Month).GetWord(@case.ToNumericCase());
         }
     }
 }

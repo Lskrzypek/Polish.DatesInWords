@@ -1,5 +1,4 @@
-﻿using Polish.NumbersInWords;
-using System;
+﻿using System;
 
 namespace Polish.DatesInWords
 {
@@ -9,7 +8,7 @@ namespace Polish.DatesInWords
     public class DateTimeElementsBuilder
     {
         private DateTime _dateTime;
-        private Case _case = NumbersInWords.Case.Nominative;
+        private Case _case = DatesInWords.Case.Nominative;
         private DatesInWordsConfiguration _configuration = new DatesInWordsConfiguration();
 
         private IDateTimeElements _dateTimeElements = null;

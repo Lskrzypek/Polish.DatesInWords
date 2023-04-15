@@ -1,5 +1,4 @@
 using Polish.DatesInWords;
-using Polish.NumbersInWords;
 using System.Globalization;
 
 namespace Polish.Dates.Tests

@@ -26,7 +26,7 @@ namespace Polish.DatesInWords
         /// <returns>Returns fluent builder, where you can setup date declension.</returns>
         public static string ToPolishWords(this DayOfWeek dayOfWeek, Case @case = Case.Nominative, bool isPlural = false)
         {
-            return DayOfWeekWords.GetDayInWeek(dayOfWeek).GetWord(@case, isPlural);
+            return DayOfWeekWords.GetDayInWeek(dayOfWeek).GetWord(@case.ToNumericCase(), isPlural);
         }
 
         private static DateTimeElementsBuilder DoToWords(DateTime dateTime)
