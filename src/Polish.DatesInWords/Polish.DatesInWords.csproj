@@ -2,7 +2,30 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Convert dates to Polish words.</Title>
+    <Authors>lukasz_skrzypek</Authors>
+    <Description>Friendly library to convert dates to Polish words. Includes all 7 Polish cases.</Description>
+    <Copyright>MIT licence</Copyright>
+    <PackageProjectUrl>https://github.com/Lskrzypek/Polish.DatesInWords</PackageProjectUrl>
+    <PackageIcon>Icon-dt.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Lskrzypek/Polish.DatesInWords</RepositoryUrl>
+    <PackageTags>Date, Dates, Humanize, Humanizer, InWords, Words, Polish, PL</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Icon-dt.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Polish.NumbersInWords" Version="1.0.2" />
